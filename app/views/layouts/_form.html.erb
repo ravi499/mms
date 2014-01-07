@@ -1,0 +1,35 @@
+<div class="row">
+<div class="span1 offset7">
+
+<%= form_for('merchant/validate') do |f| %>
+
+<table>
+<tr>
+<td cell><%= f.label :tid %>
+<%= f.text_field :tid %>
+</td>
+
+<td>
+<%= f.label :mid %>
+<%= f.text_field :mid %>
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp; &nbsp; &nbsp; &nbsp;
+</td>
+</tr>
+
+</table>
+
+<div class="span1 offset1">
+<%= f.label :captcha  %>
+<%= f.text_field :captcha %>
+
+<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<% end %>
+
+</div>
+</div>
+</div>

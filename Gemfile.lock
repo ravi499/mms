@@ -29,6 +29,7 @@ GEM
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     arel (3.0.2)
+    bcrypt-ruby (3.0.1)
     bcrypt-ruby (3.0.1-x86-mingw32)
     bootstrap-sass (2.0.0)
     bootstrap-will_paginate (0.0.6)
@@ -46,6 +47,7 @@ GEM
       multi_json (~> 1.0)
     faker (1.0.1)
       i18n (~> 0.4)
+    galetahub-simple_captcha (0.1.5)
     hike (1.2.1)
     i18n (0.6.4)
     journey (1.0.4)
@@ -115,6 +117,7 @@ DEPENDENCIES
   bootstrap-will_paginate (= 0.0.6)
   coffee-rails (~> 3.2.1)
   faker (= 1.0.1)
+  galetahub-simple_captcha
   jquery-rails
   rails (= 3.2.15)
   sass-rails (~> 3.2.3)
