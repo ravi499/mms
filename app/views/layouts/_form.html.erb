@@ -1,16 +1,15 @@
-<div class="row">
-<div class="span1 offset7">
+<div align="center">
 
 <%= form_for('merchant/validate') do |f| %>
 
 <table>
 <tr>
-<td cell><%= f.label :tid %>
+<td><%= f.label :tid, class: "field_input" %>
 <%= f.text_field :tid %>
 </td>
 
 <td>
-<%= f.label :mid %>
+<%= f.label :mid, class: "field_input"  %>
 <%= f.text_field :mid %>
 </td>
 </tr>
@@ -23,10 +22,11 @@
 
 </table>
 
-<div class="span1 offset1">
-<%= f.label :captcha  %>
+<div align="center">
+<%= f.label :captcha, class: "field_input"   %>
 <%= f.text_field :captcha %>
 
+<div align="center">
 <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
 <% end %>
 

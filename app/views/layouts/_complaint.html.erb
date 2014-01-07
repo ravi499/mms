@@ -1,0 +1,17 @@
+<div class="row">
+<div class="span1 offset8">
+
+<%= form_for('merchant/ticket') do |f| %>
+
+<%= f.label :complaint, class: "field_input" %>
+<%= f.text_area :complaint , width: "600px", height: "400px" %>
+
+<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<% end %>
+
+</div>
+</div>
+
+<footer>
+  <p>Stretch the text area as per your needs.</p>
+</footer>

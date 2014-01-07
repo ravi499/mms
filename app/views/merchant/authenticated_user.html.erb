@@ -1,0 +1,22 @@
+<%= image_tag("logo.jpg", :alt => "Prizm Payments Services", :class => "style_image") %>
+
+<h1>Thank you for authenticating.</h1>
+<p>If you need to register a new complaint, please click the link below.</p>
+
+
+<div align="center">
+ <%= link_to "Register Complaint", '/merchant/ticket', class: "btn btn-large btn-primary" %>
+</div>
+<table>
+<tr>
+<td>
+&nbsp;
+</td>
+</tr>
+
+</table>
+<p>If you need to check the status of a registered complaint, please click the link below.</p>
+
+<div align="center">
+<%= link_to "Ticket status", '/merchant/status', class: "btn btn-large btn-primary" %>
+</div>

@@ -1,0 +1,16 @@
+<%= image_tag("logo.jpg", :alt => "Prizm Payments Services", :class => "style_image") %>
+
+<div align="center">
+<p>Enter your ticket ID to get the status of your registered complaint.</p>
+
+<%= form_for('merchant/status') do |f| %>
+
+<%= f.label :ticket_id, "Ticket ID", class: "field_input" %>
+<%= f.text_field :ticket_id %>
+
+<div align="center">
+<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<% end %>
+
+</div>
+</div>

@@ -1,6 +1,6 @@
 Tickets::Application.routes.draw do
   
-  root :to => "merchant#validate"
+  root :to => "merchant#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
