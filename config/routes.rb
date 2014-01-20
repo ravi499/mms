@@ -1,6 +1,14 @@
 Tickets::Application.routes.draw do
   
+  resources :merchants
   root :to => "merchant#home"
+
+  match '/home',               to: 'merchant#home'
+  match '/validate',           to: 'merchant#validate'
+  match '/authenticated_user', to: 'merchant#authenticated_user'
+  match '/complaint',          to: 'merchant#complaint'
+  match '/status',             to: 'merchant#status'
+  match '/new',                to: 'merchant#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

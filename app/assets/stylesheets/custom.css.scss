@@ -1,11 +1,15 @@
 @import "bootstrap";
 
+/*headers and texts*/
+
 h1 {
-font-size: 3em;
+font-size: 2.5em;
 letter-spacing: -2px;
 margin-top: 10px;
 margin-bottom: 60px;
 text-align: center;
+position: inherit;
+
 }
 
 p {
@@ -13,6 +17,32 @@ font-size: 1.6em;
 line-height: 1.7em;
 text-align: center;
 }
+
+.p1 {
+font-size: 1.6em;
+line-height: 1.7em;
+text-align: center;
+margin-top: 220px;
+}
+
+
+header ul {
+float: right;
+list-style: none;
+color: black;
+font-size: 1.5em;
+line-height: 1em;
+}
+
+.data {
+font-size: 1.3em;
+letter-spacing: -1px;
+font-weight: bold;
+line-height: 1.5em;
+
+}
+
+/*logo*/
 
 .style_image {
 float: left;
@@ -24,8 +54,43 @@ font-weight: bold;
 line-height: 1;
 }
 
+
+/*label*/
+
 .field_input {
-    font-weight: bold;
-    text-transform: uppercase;
+font-weight: bold;
+text-transform: uppercase;
 }
 
+
+
+/*footer*/
+
+footer {
+margin-top: 20px;
+padding-top: 5px;
+border-top: 1px solid #eaeaea;
+color: black;
+}
+
+footer ul {
+float: right;
+list-style: none;
+color: black;
+font-size: 1.5em;
+line-height: 1em;
+}
+
+/*flashes*/
+
+.flash-failure {
+font-weight: bold;
+text-transform: uppercase;
+color: red;
+}
+
+.flash-success {
+font-weight: bold;
+text-transform: uppercase;
+color: green;
+}

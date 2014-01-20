@@ -1,22 +1,36 @@
-<%= image_tag("logo.jpg", :alt => "Prizm Payments Services", :class => "style_image") %>
-
-<h1>Thank you for authenticating.</h1>
-<p>If you need to register a new complaint, please click the link below.</p>
-
+<% provide(:title, 'Valid Merchant') %>
+<%= render 'layouts/header' %>
 
 <div align="center">
- <%= link_to "Register Complaint", '/merchant/ticket', class: "btn btn-large btn-primary" %>
+
+<div class="flash-success">
+<%= flash[:success] %>
 </div>
-<table>
-<tr>
-<td>
-&nbsp;
-</td>
-</tr>
 
-</table>
-<p>If you need to check the status of a registered complaint, please click the link below.</p>
+<h1>Thank you for registering your complaint.These are your details.</h1>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
 
 <div align="center">
-<%= link_to "Ticket status", '/merchant/status', class: "btn btn-large btn-primary" %>
+
+<div class="data">
+<table>
+<tr><td>MID: "<%= @merchant.mid %>"</tr></td>
+<tr><td>TID: "<%= @merchant.tid %>"</tr></td>
+<tr><td>Mobile: "<%= @merchant.mobile %>"</tr></td>
+<tr><td>Email: "<%= @merchant.email %>"</tr></td>
+<tr><td>Ticket ID: "<%= @merchant.tick %>"</tr></td>
+<tr><td>Complaint: "<%= @merchant.complaint %>"</tr></td>
+</table>
+<div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div align="center">
+<p>If you have any discrepencies, please contact this number.</p>
+<%= link_to image_tag("contact.jpg", :alt => "(+91) 44 39807677") %>
+</div>
 </div>

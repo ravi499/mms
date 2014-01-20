@@ -1,8 +1,16 @@
-<%= image_tag("logo.jpg", :alt => "Prizm Payments Services", :class => "style_image") %>
+<% provide(:title, 'Status') %>
+<%= render 'layouts/header' %>
+
+<div class="center">
+<p>Enter your ticket ID to get the status of your registered complaint.</p>
+</div>
+
+<table>
+&nbsp;
+<table>
+
 
 <div align="center">
-<p>Enter your ticket ID to get the status of your registered complaint.</p>
-
 <%= form_for('merchant/status') do |f| %>
 
 <%= f.label :ticket_id, "Ticket ID", class: "field_input" %>
@@ -14,3 +22,5 @@
 
 </div>
 </div>
+
+<%= render 'layouts/footer' %>

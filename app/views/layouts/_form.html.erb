@@ -1,35 +1,42 @@
 <div align="center">
 
-<%= form_for('merchant/validate') do |f| %>
+<%= form_for(:merchant, url: 'validate') do |f| %>
 
 <table>
-<tr>
-<td><%= f.label :tid, class: "field_input" %>
+<tr><td><%= f.label :mid, class: "field_input" %>
+<%= f.text_field :mid %>
+</td>
+
+<td>
+<%= f.label :tid, class: "field_input"  %>
 <%= f.text_field :tid %>
 </td>
 
 <td>
-<%= f.label :mid, class: "field_input"  %>
-<%= f.text_field :mid %>
+<%= f.label :mobile, class: "field_input"  %>
+<%= f.text_field :mobile %>
 </td>
-</tr>
 
-<tr>
 <td>
-&nbsp; &nbsp; &nbsp; &nbsp;
+<%= f.label :email, class: "field_input"  %>
+<%= f.text_field :email %>
 </td>
-</tr>
+</tr><table>
 
-</table>
+<p>&nbsp;</p>
 
-<div align="center">
+<%= f.label :complaint, class: "field_input" %>
+<%= f.text_area :complaint , :style => "width:600px;" %>
+
+<p>&nbsp;</p>
+
 <%= f.label :captcha, class: "field_input"   %>
-<%= f.text_field :captcha %>
+<%= recaptcha_tags %>
 
-<div align="center">
-<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<p>&nbsp;</p>
+
+
+
+<%= (f.submit "Submit", class: "btn btn-large btn-primary")%>
 <% end %>
-
-</div>
-</div>
 </div>

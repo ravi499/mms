@@ -1,9 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  tid: MyString
   mid: MyString
+  tid: MyString
+  mobile: MyString
+  email: MyString
+  complaint: MyText
+  tick: MyString
 
 two:
-  tid: MyString
   mid: MyString
+  tid: MyString
+  mobile: MyString
+  email: MyString
+  complaint: MyText
+  tick: MyString
